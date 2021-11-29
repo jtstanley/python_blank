@@ -1,5 +1,6 @@
 name: Running unit tests
 
+# Comment out the 'on' block
 on:
   push:
     branch:
@@ -16,4 +17,4 @@ jobs:
         with:
           python-version: 3.9
       - name: Run our unittest script
-        run: python my_lib_testing.py -v
+        run: python testing_blank.py -v

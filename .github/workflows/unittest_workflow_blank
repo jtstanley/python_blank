@@ -1,20 +1,22 @@
-#name: Running unit tests
+# In order to run this workflow the file extension must be changed to `.yml`
+# This is how GH Actions identifies it as a workflow file
 
-# Comment out the 'on' block
-#on:
-#  push:
-#    branch:
-#      - main
+name: Running unit tests
+
+on:
+  push:
+    branch:
+      - main
       
-#jobs:
-#  unittest:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Checkout the repo
-#        uses: actions/checkout@v2
-#      - name: Setup Python 3.9
-#        uses: actions/setup-python@v2
-#        with:
-#          python-version: 3.9
-#      - name: Run our unittest script
-#        run: python testing_blank.py -v
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+      - name: Setup Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Run our unittest script
+        run: python testing_blank.py -v

@@ -12,7 +12,7 @@ Below is a template for an informative README file:
 
 One to two paragraph statement about your product and what it does.
 
-![](images/header.png)
+![](img/header.jpg)
 
 ## Installation
 
